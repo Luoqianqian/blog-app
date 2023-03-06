@@ -1,0 +1,55 @@
+//navbar
+.navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            width: 120px;
+            span {
+                font-size: var(--fs-5);
+                color: var(--lightGreen);
+                text-align: center;
+                transition: opacity 3s;
+                animation: fade 10s infinite 5s;
+            }
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            h6 {
+                color: var(--mid-gray);
+                font-size: var(--fs-7);
+                font-weight: var(--fw-400);
+                padding: 5px 15px;
+                &:hover {
+                        background-color: var(--lightGreen);
+                        color: var(--white);
+                        border-radius: 10px;
+                    }
+            }
+            span {
+                cursor: pointer;
+            }
+            .write {
+                background-color: var(--lightGreen);
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: var(--fw-400);
+                font-size: var(--fs-4);
+                color: var(--white);
+                border: 2px solid white;
+                border-radius: 10px;
+                &:hover {
+                    color: var(--black);
+                    background-color: white;
+                    border: 2px solid var(--lightGreen);
+                }
+            }
+        }
+    }
+}

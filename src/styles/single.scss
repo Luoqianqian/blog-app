@@ -1,0 +1,65 @@
+// single
+.single {
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    .content {
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        flex: 5;
+        .user {
+            display: flex;
+            margin-top: 10px;
+            gap: 5px;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .edit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .title {
+            margin: 15px 0;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        flex: 2;
+        h1 {
+            font-size: var(--fs-7);
+            font-weight: var(--fw-500);
+        }
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        button {
+            width: max-content;
+            color: var(--midGreen);
+            font-size: var(--fs-8);
+            border: solid 1px var(--midGreen);
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.write {
+  display: flex;
+  gap: 15px;
+  padding: 50px 0;
+  .content {
+    flex: 5;
+    input {
+      width: 100%;
+      height: 20px;
+      border: 1px solid var(--light-gray);
+      padding: 15px 10px;
+      color: var(--light-gray);
+    }
+    .editorContainer {
+      height: 300px;
+      overflow: scroll;
+      border: 1px solid var(--light-gray);
+      margin: 20px 0;
+      .editor {
+        border: none;
+        height: 100%;
+      }
+    }
+    .upload {
+      label {
+        border: 1px solid var(--light-gray);
+        width: fit-content;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .buttons {
+      display: flex;
+      gap: 15px;
+      button {
+        background-color: var(--midGreen);
+        border: 1px solid var(--midGreen);
+        color: var(--white);
+        padding: 5px 10px;
+        width: 150px;
+        &:hover {
+          border: 1px solid var(--midGreen);
+          background-color: var(--white);
+          color: var(--black);
+        }
+      }
+    }
+    .item {
+      border: 1px solid var(--light-gray);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      .cat {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2px;
+        input {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
